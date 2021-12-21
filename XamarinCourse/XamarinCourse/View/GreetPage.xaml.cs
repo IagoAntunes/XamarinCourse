@@ -15,6 +15,9 @@ namespace XamarinCourse
         public GreetPage()
         {
             InitializeComponent();
+
+
+
         }
 
         private void ClickME(object sender, EventArgs e)
