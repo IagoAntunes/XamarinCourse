@@ -16,13 +16,13 @@ namespace XamarinCourse
         {
             InitializeComponent();
 
-
+            slider.Value = 0.0;
 
         }
 
-        private void ClickME(object sender, EventArgs e)
+        private void slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
-            DisplayAlert("Title", "Ola mundo", "OK");
+            label.Text = String.Format("O novo valor é {0:F2}",e.NewValue);
         }
     }
 }

@@ -2,8 +2,10 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="XamarinCourse.GreetPage">
-    
-    <Label  Text="Hello World"/>
 
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <Label  Text="Hello World" x:Name="label"/>
+        <Slider x:Name="slider" ValueChanged="slider_ValueChanged"></Slider>
+    </StackLayout>
 
 </ContentPage>
