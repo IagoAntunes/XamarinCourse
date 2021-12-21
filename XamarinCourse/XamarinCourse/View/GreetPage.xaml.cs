@@ -12,11 +12,18 @@ namespace XamarinCourse
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class GreetPage : ContentPage
     {
+        [Obsolete]
         public GreetPage()
         {
             InitializeComponent();
 
             slider.Value = 0.0;
+
+            Padding = Device.OnPlatform(
+                iOS: new Thickness(0,20,0,0),
+                Android: new Thickness(10, 20, 0, 0),
+                WinPhone: new Thickness(30,20,0,0)
+            );
 
         }
 
