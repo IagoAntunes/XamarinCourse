@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinCourse.View;
 
 namespace XamarinCourse
 {
@@ -10,7 +11,7 @@ namespace XamarinCourse
         {
             InitializeComponent();
 
-            MainPage = new GreetPage();
+            MainPage = new Exercicio();
         }
 
         protected override void OnStart()
