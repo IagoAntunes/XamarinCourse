@@ -20,9 +20,9 @@ namespace XamarinCourse
 
         }
 
-        private void slider_ValueChanged(object sender, ValueChangedEventArgs e)
-        {
-            label.Text = String.Format("O novo valor é {0:F2}",e.NewValue);
-        }
+        //private void slider_ValueChanged(object sender, ValueChangedEventArgs e)
+        //{
+        //    label.Text = String.Format("O novo valor é {0:F2}",e.NewValue);
+        //}
     }
 }

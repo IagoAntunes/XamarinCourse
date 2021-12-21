@@ -4,8 +4,8 @@
              x:Class="XamarinCourse.GreetPage">
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <Label  Text="Hello World" x:Name="label"/>
-        <Slider x:Name="slider" ValueChanged="slider_ValueChanged"></Slider>
+        <Label  Text="{Binding Source={x:Reference slider}, Path=Value, StringFormat='Value Is = {0:F2}'}" x:Name="label"/>
+        <Slider x:Name="slider" ></Slider>
     </StackLayout>
 
 </ContentPage>
